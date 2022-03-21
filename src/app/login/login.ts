@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
   title = 'demo';
+  user={userName:'',password:''}
+  submit(){
+    alert("clicked"+this.user.userName+this.user.password);
+  }
 }

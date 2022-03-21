@@ -1,1 +1,13 @@
 <h2>welcome to login page</h2>
+<form #myForm="ngForm" (ngSubmit)="submit()">
+    <div><label for="username">Username:</label></div>
+    <div><input type="text" [(ngModel)]="user.userName" id="username" name="username" required></div>
+
+   <div> <label for="pwd">Password:</label></div>
+    <div><input type="password" [(ngModel)]="user.password" id="pwd" name="pwd" required=""></div>
+
+   <div> <button type="submit" [disabled]="!myForm.valid"> Submit</button></div>
+</form>
+
+
+<!-- user name , password, and submit button user name should be display in alert box when submit button click -->
