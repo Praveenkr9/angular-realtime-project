@@ -10,6 +10,8 @@ import {FooterComponent } from './footer/footer';
 import { DashboardComponent } from './dashboard/dashboard';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EmployeeComponent } from './employee/employee';
+import { AddEmployeeComponent } from './add-employee/add-employee';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     DashboardComponent,
+    EmployeeComponent,
+    AddEmployeeComponent 
   
   ],
   imports: [
