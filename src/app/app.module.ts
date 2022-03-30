@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EmployeeComponent } from './employee/employee';
 import { AddEmployeeComponent } from './add-employee/add-employee';
+import { AuthGuardService } from './auth-service/auth-guard-service';
+import { AuthService } from './auth-service/auth-service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,7 @@ import { AddEmployeeComponent } from './add-employee/add-employee';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthGuardService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {AuthService} from '../auth-service/auth-service';
+
+
 
 @Component({
   selector: 'login',
@@ -8,7 +11,11 @@ import { Component } from '@angular/core';
 export class LoginComponent {
   title = 'demo';
   user={userName:'',password:''}
+
+  constructor(private authService:AuthService){
+
+  }
   submit(){
-    alert("clicked"+this.user.userName+this.user.password);
+    this.authService.login(this.user.userName,this.user.password)
   }
 }
