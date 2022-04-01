@@ -6,10 +6,11 @@ import { DashboardComponent } from './dashboard/dashboard';
 import { EmployeeComponent } from './employee/employee';
 import { AuthGuardService } from './auth-service/auth-guard-service';
 const routes: Routes = [
+ 
+  {path:'',component:DashboardComponent,canActivate:[AuthGuardService]},
+  {path:'employee',component:EmployeeComponent,canActivate:[AuthGuardService]},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
-  {path:'dashboard',component:DashboardComponent,canActivate:[AuthGuardService]},
-  {path:'employee',component:EmployeeComponent,canActivate:[AuthGuardService]}
 ];
 
 @NgModule({

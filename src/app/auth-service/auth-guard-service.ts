@@ -16,7 +16,7 @@ export class AuthGuardService implements CanActivate {
         if (!this.authService.isUserLoggedIn()) {
             alert('You are not allowed to view this page. You are redirected to login Page');
             
-            this.router.navigate(["login"],{ queryParams: { retUrl: route.url} });
+            this.router.navigate(["login"]);
             return false;
  
             //var urlTree = this.router.createUrlTree(['login']);

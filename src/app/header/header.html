@@ -1,5 +1,6 @@
-<a style="margin-left:10px" [routerLink]="['/login']">login</a>
-<a style="margin-left:10px" [routerLink]="['/register']">register</a>
-<a style="margin-left:10px" [routerLink]="['/dashboard']">dashboard</a>
-<a style="margin-left:10px" [routerLink]="['/employee']">employee</a>
-<button style="margin-left:10px" (click)="logout()">logout</button>
+<a *ngIf='!isUserLogin' style="margin-left:10px" [routerLink]="['/login']">login</a>
+<a *ngIf='!isUserLogin' style="margin-left:10px" [routerLink]="['/register']">register</a>
+<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/']">dashboard</a>
+<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/employee']">employee</a>
+<button *ngIf='isUserLogin' style="margin-left:10px" (click)="logout()">logout</button>
+

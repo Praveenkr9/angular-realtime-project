@@ -23,8 +23,9 @@ export class AuthService {
         this.isloggedIn=true;
         this.userName=username;
         localStorage.setItem('user',this.userName);
+        this.router.navigate(['']);
+
         window.location.reload();
-        this.router.navigate(['dashboard']);
         return this.isloggedIn;
     }
  
@@ -36,6 +37,8 @@ export class AuthService {
         this.isloggedIn = false;
         localStorage.clear();
         this.router.navigate(["login"]);
+        window.location.reload();
+
     }
  
 }

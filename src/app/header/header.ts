@@ -7,8 +7,11 @@ import { AuthService } from '../auth-service/auth-service';
 })
 export class HeaderComponent {
   title = 'demo';
+  isUserLogin=false
 
   constructor(private authservice:AuthService){
+
+    this.isUserLogin=this.authservice.isUserLoggedIn();
 
   }
   
