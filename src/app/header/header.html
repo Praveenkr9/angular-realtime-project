@@ -1,6 +1,8 @@
-<a *ngIf='!isUserLogin' style="margin-left:10px" [routerLink]="['/login']">login</a>
-<a *ngIf='!isUserLogin' style="margin-left:10px" [routerLink]="['/register']">register</a>
-<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/']">dashboard</a>
-<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/employee']">employee</a>
-<button *ngIf='isUserLogin' style="margin-left:10px" (click)="logout()">logout</button>
+<a *ngIf='!isUserLogin' style="margin-left:10px" [routerLink]="['/login']">Login</a>
+<a *ngIf='!isUserLogin' style="margin-left:10px" [routerLink]="['/register']">Register</a>
+<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/']">Dashboard</a>
+<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/employee']">Employee</a>
+<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/products']">Products</a>
+
+<button *ngIf='isUserLogin' style="margin-left:10px" (click)="logout()">Logout</button>
 

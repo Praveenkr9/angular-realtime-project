@@ -1,0 +1,56 @@
+<form>
+    <div>
+        <label>
+            ID
+        </label>
+        <input type="text" [(ngModel)]="product.id" name="id">
+    </div>
+    <div>
+        <label>
+            Name
+        </label>
+        <input type="text" [(ngModel)]="product.name" name="name">
+    </div>
+    <div>
+        <label>
+        Description        </label>
+        <input type="text" [(ngModel)]="product.desc" name="desc">
+    </div>
+    <div>
+        <label>
+            Image URL
+        </label>
+        <input type="text" [(ngModel)]="product.imageURL" name="imageURL">
+    </div>
+    <div>
+        <label>
+            Price
+        </label>
+        <input type="number" [(ngModel)]="product.price" name="price">
+    </div>
+
+<button (click)="submit()">Save</button>
+</form>
+
+
+
+<div>
+    <table>
+<tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>DESCRIPTION</th>
+    <th>IMAGEURL</th>
+    <th>PRICE</th>
+
+</tr>
+<tr *ngFor="let p of products ">
+    <TD>{{p.id}}</TD>
+    <TD>{{p.name}}</TD>
+    <TD>{{p.description}}</TD>
+    <TD>{{p.imageUrl}}</TD>
+    <TD>{{p.price}}</TD>
+
+</tr>
+    </table>
+</div>

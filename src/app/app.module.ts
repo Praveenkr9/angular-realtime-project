@@ -14,6 +14,8 @@ import { EmployeeComponent } from './employee/employee';
 import { AddEmployeeComponent } from './add-employee/add-employee';
 import { AuthGuardService } from './auth-service/auth-guard-service';
 import { AuthService } from './auth-service/auth-service';
+import { AppProducts } from './products/products';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,16 +25,18 @@ import { AuthService } from './auth-service/auth-service';
     FooterComponent,
     DashboardComponent,
     EmployeeComponent,
-    AddEmployeeComponent 
+    AddEmployeeComponent ,
+    AppProducts
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [AuthGuardService,AuthService],
+  providers: [AuthGuardService,AuthService,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
