@@ -14,8 +14,8 @@ export class AppProducts {
   product:any ={
       id:'',
       name:'',
-      desc:'',
-      imageURL:'',
+      description:'',
+      imageUrl:'',
       price: undefined
   }
   constructor( private api:RestApiService){
@@ -31,8 +31,15 @@ export class AppProducts {
   });
 
   }
+createProduct(){
+  this.api.createProduct(this.product).subscribe((data:any) => {
+    alert('success');
+    this.getProducts();
+});
 
+
+}
   submit(){
-    alert("clicked");
-  }
+    this.createProduct();
+}
 }

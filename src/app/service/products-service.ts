@@ -21,6 +21,15 @@ export class RestApiService {
       .pipe(retry(1), catchError(this.handleError));
   }
 
+  createProduct(product: any) {
+    return this.http
+      .post(
+        this.apiURL + '/products',
+        JSON.stringify(product),
+        this.httpOptions
+      )
+      .pipe(retry(1), catchError(this.handleError));
+  }
   handleError(error: any) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {
