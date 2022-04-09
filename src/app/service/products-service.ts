@@ -30,6 +30,22 @@ export class RestApiService {
       )
       .pipe(retry(1), catchError(this.handleError));
   }
+  updateProduct(id: any, product: any) {
+    return this.http
+      .put(
+        this.apiURL + '/products/' + id,
+        JSON.stringify(product),
+        this.httpOptions
+      )
+      .pipe(retry(1), catchError(this.handleError));
+  }
+
+  deleteProduct(id: any) {
+    return this.http
+      .delete(this.apiURL + '/products/' + id, this.httpOptions)
+      .pipe(retry(1), catchError(this.handleError));
+  }
+
   handleError(error: any) {
     let errorMessage = '';
     if (error.error instanceof ErrorEvent) {

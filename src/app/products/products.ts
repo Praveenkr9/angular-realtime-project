@@ -18,11 +18,26 @@ export class AppProducts {
       imageUrl:'',
       price: undefined
   }
+
+
+
+
+  updateProductObj:any ={
+    id:'',
+    name:'',
+    description:'',
+    imageUrl:'',
+    price: undefined
+}
+
+
+
+deleteRecordID:any;
+
   constructor( private api:RestApiService){
 
       this.getProducts();
   }
-
 
 
   getProducts(){
@@ -36,10 +51,24 @@ createProduct(){
     alert('success');
     this.getProducts();
 });
+}
+updateProduct(){
+  this.api.updateProduct(this.updateProductObj.id,this.updateProductObj).subscribe((data:any) => {
+    alert('success');
+    this.getProducts();
+});
+}
 
-
+deleteProduct(){
+  this.api.deleteProduct(this.deleteRecordID).subscribe((data:any) => {
+    alert('success');
+    this.getProducts();
+});
 }
   submit(){
     this.createProduct();
 }
+
+
+
 }

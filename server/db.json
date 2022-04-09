@@ -9,17 +9,10 @@
     },
     {
       "id": 2,
-      "name": "Rubik's Cube 2",
-      "description": "Praesent dictum laoreet nibh nec volutpat. Etiam vel arcu lectus. Maecenas tellus eros, euismod a urna eget, interdum posuere dolor. Vivamus eleifend convallis nisi vel blandit. Praesent sed tellus vitae dui viverra faucibus porttitor ut dui. Praesent id metus ut augue tincidunt porttitor ut ac nisl. Etiam ac porttitor massa,",
-      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/610YnX2Cu9L._CR204,0,1224,1224_UX256.jpg",
-      "price": 199
-    },
-    {
-      "id": 3,
-      "name": "The Train",
-      "description": "In hac habitasse platea dictumst. Integer volutpat fringilla elit, sit amet molestie neque volutpat a. Ut quis ligula libero. Suspendisse justo ipsum, efficitur non lobortis sed",
-      "imageUrl": "https://b3h2.scene7.com/is/image/BedBathandBeyond/139044962738514p?$imagePLP$&wid=256&hei=256",
-      "price": 399
+      "name": "ravi",
+      "description": "desc",
+      "imageUrl": "rrr",
+      "price": 789
     },
     {
       "id": 4,
@@ -34,29 +27,6 @@
       "description": "In aliquet aliquam dictum. Curabitur a neque enim. Duis tincidunt metus vitae arcu pretium, eu rhoncus urna venenatis. Etiam eu est pharetra, auctor lorem a, finibus felis. Vestibulum convallis auctor magna nec posuere. Proin velit augue, rhoncus vulputate convallis vitae, lobortis vel justo. Maecenas lectus ligula,",
       "imageUrl": "https://www.pascogifts.com/files/cache/square/files/8182-002-foto-1-pluche-knuffelbeer-met-hoodie-low-resolution-748248-5bc4915253078.jpg",
       "price": 99
-    },
-    {
-      "id": "6",
-      "name": "praveen",
-      "desc": "fghjkl",
-      "imageURL": "sdrtyuiop;",
-      "price": -2
-    },
-    {
-      "id": "7",
-      "name": "3456789",
-      "description": "",
-      "imageUrl": "",
-      "price": -12,
-      "desc": "ertyuiop[",
-      "imageURL": "3456789opkjhgftyui"
-    },
-    {
-      "id": "8",
-      "name": "djkl",
-      "description": "fghjkl;'",
-      "imageUrl": "wertyuiop[",
-      "price": 56
     }
   ],
   "wishlist": [
