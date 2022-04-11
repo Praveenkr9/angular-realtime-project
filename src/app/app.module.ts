@@ -15,7 +15,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee';
 import { AuthGuardService } from './auth-service/auth-guard-service';
 import { AuthService } from './auth-service/auth-service';
 import { AppProducts } from './products/products';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { MyInterceptor } from './service/myinterceptors';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AuthGuardService,AuthService,],
+  providers: [AuthGuardService,AuthService,{ provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true }],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
