@@ -17,6 +17,8 @@ import { AuthService } from './auth-service/auth-service';
 import { AppProducts } from './products/products';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MyInterceptor } from './service/myinterceptors';
+import { UserComponent } from './users/user';
+import { AddUserComponent } from './add-user/add-user';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { MyInterceptor } from './service/myinterceptors';
     DashboardComponent,
     EmployeeComponent,
     AddEmployeeComponent ,
-    AppProducts
+    AppProducts,
+    UserComponent,
+    AddUserComponent
   
   ],
   imports: [

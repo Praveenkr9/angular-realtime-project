@@ -3,6 +3,7 @@
 <a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/']">Dashboard</a>
 <a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/employee']">Employee</a>
 <a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/products']">Products</a>
+<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/user']">User</a>
 
 <button *ngIf='isUserLogin' style="margin-left:10px" (click)="logout()">Logout</button>
 

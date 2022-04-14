@@ -1,0 +1,27 @@
+
+Module
+component
+routing
+forms
+template driven forms
+reactive forms
+
+rest services (CRUD) or backend calls
+direcrives 
+pipes
+interceptors
+component to component interaction
+session management
+localstorage 
+
+
+
+
+
+html 
+css
+js
+
+
+
+git and github

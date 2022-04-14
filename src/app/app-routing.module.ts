@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard';
 import { EmployeeComponent } from './employee/employee';
 import { AuthGuardService } from './auth-service/auth-guard-service';
 import { AppProducts } from './products/products';
+import { UserComponent } from './users/user';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'products',component:AppProducts},
+  {path:'user', component:UserComponent}
 
 ];
 
