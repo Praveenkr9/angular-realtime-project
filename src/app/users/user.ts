@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class UserComponent {
  
     parentdata="welcome to user page" ;
-    parentdata2="back to user";
+    parentdata2="back to";
 
     receiveMessage($event:any){
       this.parentdata2 = $event;
