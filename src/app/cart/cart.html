@@ -1,0 +1,108 @@
+<h1>Create Cart</h1>
+
+<form>
+    <div>
+        <label>
+            ID
+        </label>
+        <input type="text" [(ngModel)]="cart.id" name="id">
+    </div>
+    <div>
+        <label>
+            Name
+        </label>
+        <input type="text" [(ngModel)]="cart.name" name="name">
+    </div>
+    <div>
+        <label>
+        Description        </label>
+        <input type="text" [(ngModel)]="cart.description" name="desc">
+    </div>
+    <div>
+        <label>
+            Image URL
+        </label>
+        <input type="text" [(ngModel)]="cart.imageUrl" name="imageURL">
+    </div>
+    <div>
+        <label>
+            Price
+        </label>
+        <input type="number" [(ngModel)]="cart.price" name="price">
+    </div>
+
+<button (click)="createCart()">Save</button>
+</form>
+
+
+
+
+
+<h1>Update Product</h1>
+
+<form>
+    <div>
+        <label>
+            ID
+        </label>
+        <input type="text" [(ngModel)]="updatecartObj.id" name="id">
+    </div>
+    <div>
+        <label>
+            Name
+        </label>
+        <input type="text" [(ngModel)]="updatecartObj.name" name="name">
+    </div>
+    <div>
+        <label>
+        Description        </label>
+        <input type="text" [(ngModel)]="updatecartObj.description" name="desc">
+    </div>
+    <div>
+        <label>
+            Image URL
+        </label>
+        <input type="text" [(ngModel)]="updatecartObj.imageUrl" name="imageURL">
+    </div>
+    <div>
+        <label>
+            Price
+        </label>
+        <input type="number" [(ngModel)]="updatecartObj.price" name="price">
+    </div>
+
+<button (click)="updateCart()">Save</button>
+</form>
+
+
+
+<h1>Delete record</h1>
+<div>
+    <label>
+        ID
+    </label>
+    <input type="text" [(ngModel)]="deleteRecordID" name="id">
+    <button (click)="deletecart()">Delete</button>
+</div>
+
+
+<div>
+    <table>
+<tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>DESCRIPTION</th>
+    <th>IMAGEURL</th>
+    <th>PRICE</th>
+
+</tr>
+<tr *ngFor="let p of Carts ">
+    <TD>{{p.product.id}}</TD>
+    <TD>{{p.product.name}}</TD>
+    <TD>{{p.product.description}}</TD>
+    <TD>{{p.product.imageUrl}}</TD>
+    <TD>{{p.product.price}}</TD>
+
+</tr>
+    </table>
+</div>

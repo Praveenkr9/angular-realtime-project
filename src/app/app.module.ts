@@ -19,6 +19,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MyInterceptor } from './service/myinterceptors';
 import { UserComponent } from './users/user';
 import { AddUserComponent } from './add-user/add-user';
+import { CartComponent } from './cart/cart';
+import { CartService } from './service/cart';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,9 @@ import { AddUserComponent } from './add-user/add-user';
     AddEmployeeComponent ,
     AppProducts,
     UserComponent,
-    AddUserComponent
+    AddUserComponent,
+    CartComponent
+
   
   ],
   imports: [
@@ -41,7 +45,7 @@ import { AddUserComponent } from './add-user/add-user';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AuthGuardService,AuthService,{ provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true }],
+  providers: [AuthGuardService,AuthService,CartService,{ provide: HTTP_INTERCEPTORS, useClass: MyInterceptor, multi: true }],
   bootstrap: [AppComponent]
 
 })

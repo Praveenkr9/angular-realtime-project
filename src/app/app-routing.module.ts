@@ -7,7 +7,7 @@ import { EmployeeComponent } from './employee/employee';
 import { AuthGuardService } from './auth-service/auth-guard-service';
 import { AppProducts } from './products/products';
 import { UserComponent } from './users/user';
-
+import { CartComponent } from './cart/cart';
 
 const routes: Routes = [
  
@@ -16,7 +16,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'products',component:AppProducts},
-  {path:'user', component:UserComponent}
+  {path:'user', component:UserComponent},
+  {path:'cart', component:CartComponent}
 
 ];
 
