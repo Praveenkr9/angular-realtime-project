@@ -1,0 +1,38 @@
+<!-- <h2>{{title}}</h2>
+<button (click)="toggle()">Hide/Show Child</button>
+<child-component *ngIf="displayChild" [message]="Hello"></child-component> -->
+
+
+<h1>Pipes</h1>
+
+<h5>Uppercase pipes</h5>
+
+{{a | uppercase}}
+
+<h5> 
+    Lowercase pipes 
+</h5>
+
+{{a | lowercase}}
+
+<!-- 
+<h5>curreny Pipes</h5>
+<div>{{money | curreny : "INR"}}</div> -->
+
+
+<h5>Date pipes</h5>
+<div>{{todayDate | date:'d/M/y'}}</div>
+
+display time using date pipes
+<div>{{todayDate | date:'shortTime'}}</div>
+
+live time
+{{now | date:'shortTime'}}
+
+<div>
+percentage pipes
+{{100.2345|percent}}</div>
+
+slice pipes
+
+{{months | slice :2:6}}

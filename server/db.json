@@ -59,16 +59,6 @@
     },
     {
       "product": {
-        "id": 3,
-        "name": "The Train",
-        "description": "In hac habitasse platea dictumst. Integer volutpat fringilla elit, sit amet molestie neque volutpat a. Ut quis ligula libero. Suspendisse justo ipsum, efficitur non lobortis sed",
-        "imageUrl": "https://b3h2.scene7.com/is/image/BedBathandBeyond/139044962738514p?$imagePLP$&wid=256&hei=256",
-        "price": 399
-      },
-      "id": 2
-    },
-    {
-      "product": {
         "id": 1,
         "name": "Rubik's Cube",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra velit erat. Praesent consequat nec ipsum non volutpat. Morbi vel ex auctor, porttitor felis in, accumsan urna. Duis hendrerit est ut ligula consequat vestibulum. Pellentesque ultrices semper nunc eu mattis. Sed vehicula leo sit amet mi tincidunt, sit amet interdum nulla sollicitudin",

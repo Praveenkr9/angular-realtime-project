@@ -21,6 +21,7 @@ import { UserComponent } from './users/user';
 import { AddUserComponent } from './add-user/add-user';
 import { CartComponent } from './cart/cart';
 import { CartService } from './service/cart';
+import { PipesComponent } from './pipescomponent/pipescomponent';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { CartService } from './service/cart';
     AppProducts,
     UserComponent,
     AddUserComponent,
-    CartComponent
+    CartComponent,
+    PipesComponent
 
   
   ],

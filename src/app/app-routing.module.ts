@@ -8,6 +8,7 @@ import { AuthGuardService } from './auth-service/auth-guard-service';
 import { AppProducts } from './products/products';
 import { UserComponent } from './users/user';
 import { CartComponent } from './cart/cart';
+import { PipesComponent } from './pipescomponent/pipescomponent';
 
 const routes: Routes = [
  
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'products',component:AppProducts},
   {path:'user', component:UserComponent},
-  {path:'cart', component:CartComponent}
+  {path:'cart', component:CartComponent},
+  {path:'pipescomponent', component:PipesComponent}
 
 ];
 
