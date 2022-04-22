@@ -5,7 +5,22 @@
 <a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/products']">Products</a>
 <a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/user']">User</a>
 <a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/cart']">Cart</a>
-<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/pipescomponent']">pipescomponent</a></div>
+<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/pipescomponent']">pipescomponent</a>
+<a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/bsforms']">bsforms</a></div>
 
 <button *ngIf='isUserLogin' style="margin-left:10px" (click)="logout()">Logout</button>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a *ngIf='isUserLogin' style="margin-left:10px" [routerLink]="['/']">Dashboard</a></li>
+        <li><a *ngIf='!isUserLogin' style="margin-left:10px" [routerLink]="['/register']">Register</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+  </nav>
 

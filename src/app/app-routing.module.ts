@@ -9,6 +9,7 @@ import { AppProducts } from './products/products';
 import { UserComponent } from './users/user';
 import { CartComponent } from './cart/cart';
 import { PipesComponent } from './pipescomponent/pipescomponent';
+import { BootstrapFormsComponent } from './bootstrap-forms/bootstrap-form';
 
 const routes: Routes = [
  
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'products',component:AppProducts},
   {path:'user', component:UserComponent},
   {path:'cart', component:CartComponent},
-  {path:'pipescomponent', component:PipesComponent}
+  {path:'pipescomponent', component:PipesComponent},
+  {path:'bsforms', component:BootstrapFormsComponent}
 
 ];
 

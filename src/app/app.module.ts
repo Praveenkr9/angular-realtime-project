@@ -22,6 +22,7 @@ import { AddUserComponent } from './add-user/add-user';
 import { CartComponent } from './cart/cart';
 import { CartService } from './service/cart';
 import { PipesComponent } from './pipescomponent/pipescomponent';
+import { BootstrapFormsComponent } from './bootstrap-forms/bootstrap-form';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,9 @@ import { PipesComponent } from './pipescomponent/pipescomponent';
     UserComponent,
     AddUserComponent,
     CartComponent,
-    PipesComponent
+    PipesComponent,
+    BootstrapFormsComponent,
+
 
   
   ],
